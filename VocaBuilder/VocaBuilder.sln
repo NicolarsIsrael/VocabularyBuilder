@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VocaBuilder", "VocaBuilder\VocaBuilder.csproj", "{10B07BC9-7808-4E85-A046-2749DE99DD47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10B07BC9-7808-4E85-A046-2749DE99DD47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10B07BC9-7808-4E85-A046-2749DE99DD47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10B07BC9-7808-4E85-A046-2749DE99DD47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10B07BC9-7808-4E85-A046-2749DE99DD47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {262E14BD-0972-4D9E-868D-87100D06A06A}
+	EndGlobalSection
+EndGlobal
