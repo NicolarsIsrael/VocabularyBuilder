@@ -1,0 +1,50 @@
+﻿@model IEnumerable<VocaBuilder.Core.Word>
+@{
+    ViewData["Title"] = "WordLists";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class=" centralized-card" style="margin-top:50px">
+    <div class="text-right mb-2">
+        <a asp-action="addword" class="btn btn-primary">Add new word</a>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <table class="table table-responsive-sm">
+                <thead>
+                    <tr>
+                        <th>LSN</th>
+                        <th>Word</th>
+                        <th>Definition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var word in Model)
+                    {
+                        int definitionLength = 20;
+                        string definition = word.Definition.Length > definitionLength ? $"{word.Definition.Substring(0, 20)} ..." : word.Definition;
+                        <tr>
+                            <td>
+                                @word.Lesson
+                            </td>
+                            <td>
+                                <div style="width:120px">
+                                    <a asp-action="editword" class="mr-2">
+                                        <i class="fas fa-pencil-alt"></i>
+                                    </a>
+                                    @word.WordList
+                                </div>
+                            </td>
+                            <td>
+                                <div style="width:200px">
+                                    @definition
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+

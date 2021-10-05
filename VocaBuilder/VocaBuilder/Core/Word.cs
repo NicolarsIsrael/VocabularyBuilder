@@ -9,5 +9,6 @@ namespace VocaBuilder.Core
     {
         public string WordList { get; set; }
         public string Definition { get; set; }
+        public int Lesson { get; set; }
     }
 }

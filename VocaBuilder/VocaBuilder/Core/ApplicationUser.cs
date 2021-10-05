@@ -10,5 +10,7 @@ namespace VocaBuilder.Core
     {
         public ApplicationUser() : base() { }
         public double AveragePercentage { get; set; }
+        public int CorrectAnswers { get; set; }
+        public int TotalTrials { get; set; }
     }
 }

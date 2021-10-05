@@ -7,6 +7,7 @@ namespace VocaBuilder.Utility
 {
     public class AppConstant
     {
+        public const string SuperAdmin = "SuperAdmin";
         public const string AdminRole = "Admin";
         public const string UserRole = "User";
     }

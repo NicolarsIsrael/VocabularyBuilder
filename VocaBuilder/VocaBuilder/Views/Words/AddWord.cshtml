@@ -1,0 +1,34 @@
+﻿@model VocaBuilder.Models.AddWordDto
+@{
+    ViewData["Title"] = "Add New Word";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="card centralized-card box-shadow" style="margin-top:50px">
+    <div class="card-body">
+        <h4 class="text-center text-uppercase">Add new word</h4>
+        <hr />
+        <form asp-action="addword" method="post">
+            <div class="form-group">
+                <label asp-for="Lesson"></label>
+                <input asp-for="Lesson" class="form-control" />
+                <span asp-validation-for="Lesson" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WordList"></label>
+                <input asp-for="WordList" class="form-control" />
+                <span asp-validation-for="WordList" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Definition"></label>
+                <textarea asp-for="Definition" class="form-control" rows="6"></textarea>
+                <span asp-validation-for="Definition" class="text-danger"></span>
+            </div>
+            <input type="submit" value="Add new word" class="btn btn-primary" />
+        </form>
+    </div>
+</div>
+
+@section scripts{ 
+    <partial name="_ValidationScriptsPartial" />
+}
